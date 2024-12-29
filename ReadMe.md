@@ -69,7 +69,7 @@ pip install -r requirements.txt
 1. **Clonez ce dépôt :**
 
    ```bash
-   git clone https://github.com/votre-utilisateur/prediction-churn-stacking.git
+   git clone https://github.com/linabnz/MOSEF-Bank-Churn-Prediction.git
    cd prediction-churn-stacking
 ### Ouvrez le notebook Jupyter :
 
