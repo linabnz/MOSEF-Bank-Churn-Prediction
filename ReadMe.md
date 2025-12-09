@@ -1,89 +1,88 @@
 # 🏆 MOSEF Bank Churn Prediction - Kaggle Challenge
 
-Bienvenue dans le projet **MOSEF Bank Churn Prediction**, réalisé dans le cadre d'un challenge Kaggle. Ce projet met en avant des techniques avancées de machine learning pour prédire le churn des clients bancaires avec une précision exceptionnelle.
+Welcome to the **MOSEF Bank Churn Prediction** project, completed as part of a Kaggle challenge.  
+This project showcases advanced machine learning techniques to predict bank customer churn with exceptional accuracy.
 
-
-Nous utilisons des techniques de preprocessing, d'ingénierie des variables et un modèle d'ensemble basé sur le stacking (CatBoost, XGBoost, LightGBM) pour atteindre une performance optimale mesurée par l'AUC.
-
----
-
-## 📂 Structure du Projet
-
-- **`notebook.ipynb`** : Le notebook principal contenant toutes les étapes, de la préparation des données à la génération des fichiers de soumission.
-- **`resultats/`** : Dossier où sont enregistrés les fichiers submissions.
+We use preprocessing techniques, feature engineering, and an ensemble model based on stacking (CatBoost, XGBoost, LightGBM) to achieve optimal performance measured by AUC.
 
 ---
 
-## 🛠 Fonctionnalités
+## Project Structure
 
-### 1. **Prétraitement des Données**
-- Gestion des valeurs manquantes, des outliers, et encodage des variables catégorielles.
-- Transformation et création de nouvelles variables :
-  - Transformation logarithmique des variables biaisées.
-  - Interactions personnalisées entre les variables (e.g., `Tenure_NumOfProducts`, `Balance/EstimatedSalary`).
-
-### 2. **Analyse Exploratoire**
-- Visualisation des variables numériques et catégorielles.
-- Analyse des distributions et des relations avec la variable cible (`Exited`).
-
-### 3. **Modélisation**
-- **Modèles de base** : CatBoost, XGBoost, LightGBM.
-- **Ensemble Stacking** : Combine les modèles de base avec un méta-modèle (XGBoost ou CatBoost) pour améliorer la performance.
-- **Validation croisée** : Utilisation de Stratified K-Fold pour une évaluation robuste.
-
-### 4. **Évaluation**
-- Calcul des scores AUC pour chaque pli et génération des courbes ROC.
-- Courbe ROC moyenne pour une meilleure visualisation des performances.
-
-### 5. **Soumission**
-- Génération des prédictions sur les données de test et sauvegarde des résultats au format CSV.
+- **`notebook.ipynb`**: The main notebook containing all steps, from data preparation to submission file generation.
+- **`resultats/`**: Folder where submission files are stored.
 
 ---
 
-## 🔧 Installation
+## Features
 
-### Prérequis
-1. **Créez un environnement virtuel :**
+### 1. **Data Preprocessing**
+- Handling missing values, outliers, and encoding categorical variables.
+- Transformation and creation of new features:
+  - Log transformation of skewed variables.
+  - Custom feature interactions (e.g., `Tenure_NumOfProducts`, `Balance/EstimatedSalary`).
+
+### 2. **Exploratory Data Analysis**
+- Visualization of numerical and categorical variables.
+- Distribution analysis and relationship with the target variable (`Exited`).
+
+### 3. **Modeling**
+- **Base models**: CatBoost, XGBoost, LightGBM.
+- **Stacking Ensemble**: Combines base learners with a meta-model (XGBoost or CatBoost) for improved performance.
+- **Cross-validation**: Stratified K-Fold for robust evaluation.
+
+### 4. **Evaluation**
+- AUC scores for each fold and generation of ROC curves.
+- Average ROC curve for easier interpretation of model performance.
+
+### 5. **Submission**
+- Predictions generated on the test set and saved as CSV submission files.
+
+---
+
+## Installation
+
+### Prerequisites
+1. **Create a virtual environment:**
 
    ```bash
    python -m venv env```
 
-2. **Activation du venv :**
+2. **Activate the virtual environment:**
 ```bash
    env\Scripts\activate
    ```
-3. **Installation du requirement :**
+3. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
 
 
-## 📈 Résultats
+## Results
 
-### Performances clés :
-- **AUC moyenne sur les plis**.
-- Courbes ROC détaillées pour chaque pli et une courbe moyenne.
+### Key Performance:
+- **Average AUC across folds.**.
+- Detailed ROC curves for each fold and a mean ROC curve.
 
-## 📜 Utilisation
+## Usage
 
-1. **Clonez ce dépôt :**
+1. **Clone the repository:**
 
    ```bash
    git clone https://github.com/linabnz/MOSEF-Bank-Churn-Prediction.git
    
-### Ouvrez le notebook Jupyter :
+### Open the Jupyter notebook:
 
 ```bash
 jupyter notebook notebook.ipynb
 ```
-### Exécutez toutes les cellules pour :
-- Prétraiter les données.
-- Entraîner les modèles.
-- Évaluer les performances.
-- Générer les prédictions pour le fichier de soumission (enregistré dans **`resultats/`**).
+### Run all cells to:
+- Preprocess the data.
+- Train the models.
+- Evaluate performance.
+- Generate predictions for the submission file (stored in resultats/).
 
-
-### Contributeurs :
+### Contributors:
 - [Sharon Chemmama](https://github.com/Sharon2607)
 - [Lina Benzemma](https://github.com/linabnz)
 
